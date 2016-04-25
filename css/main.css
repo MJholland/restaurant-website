@@ -183,6 +183,10 @@ footer {
   overflow: hidden;
 }
 
+.contact {
+  line-height: 25%;
+}
+
 .footer-nav,
 .contact {
   float: right;
