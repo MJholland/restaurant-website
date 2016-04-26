@@ -64,7 +64,6 @@ nav a {
   position: relative;
   overflow: hidden;
   width: 100%;
-  background-color: #d4d4d4;
 }
 
 .banner-body {
@@ -101,7 +100,7 @@ nav a {
   position:absolute;
   bottom: 6%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 
 .btn {
@@ -146,6 +145,19 @@ nav a {
   padding: 1rem 1.3rem;
 }
 
+.section-guide-body > h2 {
+  display: block;
+}
+
+.salad-table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 5px;
+  border: 2px solid black;
+  margin-bottom: .5rem;
+  background-color: white;
+}
+
 .section-deals {
   border-top: 1px solid #3c3c3c;
   background-color: #bfbfbf;
@@ -169,6 +181,11 @@ nav a {
 .copyright {
   float: left;
   width: 50%;
+  padding-left: 1.3rem;
+}
+
+.copyright > p {
+  margin-top: .5rem;
 }
 
 .social-btn {
@@ -178,24 +195,26 @@ nav a {
 }
 
 footer {
-  padding: 1rem 1.3rem;
   background-color: #ababab;
   overflow: hidden;
 }
 
 .contact {
-  line-height: 25%;
-}
-
-.footer-nav,
-.contact {
   float: right;
   width: 50%;
+  line-height: 25%;
+  padding-right: 1.3rem;
 }
 
 .footer-nav {
-  margin-top: 1rem;
+  padding: 1rem 0;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.footer-nav a {
   text-decoration: none;
+  color: #000;
 }
 
 @media only screen and (min-width: 25em) {
@@ -235,8 +254,16 @@ footer {
     bottom: 1rem;
     left: 50%;
     top: 20%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     width: 75%;
+  }
+
+  .btn-wrap {
+    margin: 0;
+    position:absolute;
+    bottom: 15%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
   }
 
   .link-card-section {
@@ -265,7 +292,7 @@ footer {
   }
 
   li > h2 {
-    color: #000;
+    color: white;
   }
 
   .link-card-img {
@@ -293,9 +320,9 @@ footer {
   }
 
   .section-guide-body {
-    width: 60%;
-    margin: 0 1.875rem 0 .5rem;
-    display: inline-block;
+    width: 62%;
+    margin: 0 1.5rem 0 .5rem;
+    float: left;
   }
 
   .menu-section-img {
@@ -308,11 +335,33 @@ footer {
     width: 30%;
 }
 
+.contact,
+.copyright {
+  padding-top: 1rem;
+}
+
+  .contact {
+    width: 30%;
+  }
+
 @media only screen and (min-width: 60em){
 
   html {
     font-size: 120%;
     line-height: 1.5;
+  }
+
+  nav li {
+    padding-right: 1.25rem;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .banner-text {
+    font-size: 1.25rem;
   }
 
   .deal-img-wrap {
@@ -323,5 +372,14 @@ footer {
 
   .deal-img-wrap:nth-child(2n) {
     float: none;
+  }
+
+  .contact {
+    width: 30%;
+  }
+
+  .contact small {
+    font-size: 1rem;
+    line-height: .875rem;
   }
 }
