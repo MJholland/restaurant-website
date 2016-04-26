@@ -280,8 +280,8 @@ footer {
     width: 55%;
   }
 
-  nav ul {
-    padding: 1.3rem 0;
+  nav li {
+    padding: 2rem .5rem;
   }
 
   .btn-wrap {
