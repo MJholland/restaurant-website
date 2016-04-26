@@ -140,6 +140,10 @@ nav li:hover {
   margin-bottom: .5rem;
 }
 
+.menu-options p {
+  margin-top: .5rem;
+}
+
 .section-menu {
   padding: 1rem 1.3rem;
   background-color: #919191;
@@ -404,6 +408,7 @@ footer {
 }
 
 @media only screen and (min-width: 90em) {
+
   html {
     font-size: 130%;
   }
