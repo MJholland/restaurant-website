@@ -89,7 +89,7 @@ nav li:hover {
 
 .banner-title {
   font-size: 1.8rem;
-  line-height: 1.8rem;
+  line-height: 1;
   margin: 0 0 .5rem 0;
 }
 
@@ -235,11 +235,12 @@ footer {
   background-color: #d0d0d0;
 }
 
-@media only screen and (min-width: 22em) {
+@media only screen and (min-width: 25em) {
 
   .banner-body {
     top: 20%;
   }
+}
 
 @media only screen and (min-width: 30em) {
 
@@ -252,7 +253,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 38em){
+@media only screen and (min-width: 38em) {
 
   html {
     font-size: 110%;
@@ -358,14 +359,15 @@ footer {
 
   .contact,
   .copyright {
-  padding-top: 1rem;
+    padding-top: 1rem;
   }
 
   .contact {
     width: 30%;
   }
+}
 
-@media only screen and (min-width: 60em){
+@media only screen and (min-width: 60em) {
 
   html {
     font-size: 120%;
@@ -374,7 +376,7 @@ footer {
 
   .banner-title {
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 2;
   }
 
   .banner-text {
@@ -397,6 +399,17 @@ footer {
 
   .contact small {
     font-size: 1rem;
-    line-height: .875rem;
+    line-height: .875;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 130%;
+  }
+
+  .banner-title {
+    font-size: 3.1573rem;
+    line-height: 1.5;
   }
 }
