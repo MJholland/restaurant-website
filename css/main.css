@@ -45,12 +45,13 @@ header h1 {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0 1.3rem ;
+  padding: 0;
   font-size: 1.125rem;
+  text-align: center;
 }
 
 nav li {
-  padding: 0 .5rem 1rem 0;
+  padding: 1rem .5rem;
   display: inline-block;
 }
 
@@ -58,6 +59,11 @@ nav a {
   text-decoration: none;
   color: #000;
   white-space: nowrap;
+  display: block;
+}
+
+nav li:hover {
+  background-color: #d0d0d0;
 }
 
 .banner {
@@ -70,7 +76,7 @@ nav a {
   position: absolute;
   bottom: 1rem;
   left: 50%;
-  top: 5%;
+  top: 6%;
   -webkit-transform: translateX(-50%);
   width: 75%;
   max-width: 25em;
@@ -137,6 +143,7 @@ nav a {
 .section-menu {
   padding: 1rem 1.3rem;
   background-color: #919191;
+  border-top: 1px solid #3c3c3c;
 }
 
 .section-guide {
@@ -165,6 +172,10 @@ nav a {
 }
 
 .menu-section-img {
+  display: none;
+}
+
+.section-img {
   display: none;
 }
 
@@ -210,17 +221,34 @@ footer {
   padding: 1rem 0;
   background-color: #f0f0f0;
   text-align: center;
+  border-top: 1px solid #3c3c3c;
+  border-bottom: 1px solid #3c3c3c;
 }
 
 .footer-nav a {
   text-decoration: none;
   color: #000;
+  display: block;
 }
 
-@media only screen and (min-width: 25em) {
+.footer-nav:hover {
+  background-color: #d0d0d0;
+}
+
+@media only screen and (min-width: 22em) {
+
+  .banner-body {
+    top: 20%;
+  }
+
+@media only screen and (min-width: 30em) {
 
   .btn-big {
     font-size: 1.5rem;
+  }
+
+  .btn-wrap {
+    bottom: 10%;
   }
 }
 
@@ -231,31 +259,24 @@ footer {
     line-height: 1.4;
   }
 
-  header {
-    position: relative;
-  }
-
   header h1 {
     text-align: left;
+    display: inline-block;
+    width: 45%;
+    padding-right: 0;
+  }
+
+  header {
+    overflow: hidden;
   }
 
   nav {
-    position: absolute;
-    top: 40%;
-    width: 100%;
+    float: right;
+    width: 55%;
   }
 
-  nav > ul {
-    text-align: right;
-  }
-
-  .banner-body {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    top: 20%;
-    -webkit-transform: translateX(-50%);
-    width: 75%;
+  nav ul {
+    padding: 1.3rem 0;
   }
 
   .btn-wrap {
@@ -333,12 +354,12 @@ footer {
   .section-img {
     display: inline-block;
     width: 30%;
-}
+  }
 
-.contact,
-.copyright {
+  .contact,
+  .copyright {
   padding-top: 1rem;
-}
+  }
 
   .contact {
     width: 30%;
@@ -349,10 +370,6 @@ footer {
   html {
     font-size: 120%;
     line-height: 1.5;
-  }
-
-  nav li {
-    padding-right: 1.25rem;
   }
 
   .banner-title {
