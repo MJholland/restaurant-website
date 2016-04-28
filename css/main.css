@@ -66,6 +66,10 @@ nav li:hover {
   background-color: #909090;
 }
 
+nav a:hover {
+  background-color: #909090;
+}
+
 .banner {
   position: relative;
   overflow: hidden;
@@ -78,7 +82,7 @@ nav li:hover {
   left: 50%;
   top: 6%;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 75%;
   max-width: 25em;
 }
@@ -108,7 +112,7 @@ nav li:hover {
   bottom: 6%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .btn {
@@ -292,7 +296,7 @@ footer {
     bottom: 15%;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   .link-card-section {
